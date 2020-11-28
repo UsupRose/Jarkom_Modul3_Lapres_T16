@@ -24,7 +24,7 @@
     MOJOKERTO : NID_DMZ_tiap_kelompok + 3
     TUBAN     : NID_DMZ_tiap_kelompok + 4
 ```
-### Soal 1 :
+### Soal 1 
 ### Membuat topologi jaringan.
 
 - Melakukan setting awal pembuatan UML. Untuk topologi yang ada pada gambar soal maka sintaksnya sebagai berikut.
@@ -92,7 +92,7 @@ nano /etc/network/interfaces
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782120709005639700/1.10_hasil_uml.JPG" width="800" height="400">
 
-### Soal 3
+### Soal 2
 ### SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client.
 
 - Setelah itu lakukan instalasi ISC-DHCP pada TUBAN. Lakukan package list pada TUBAN dengan command.
