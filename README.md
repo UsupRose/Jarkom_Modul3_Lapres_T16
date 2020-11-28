@@ -130,8 +130,13 @@ nano /etc/dhcp/dhcpd.conf
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782127245837598750/2.3_setup_dhcpd_conf_tuban.JPG" width="400" height="400">
 
+- Kemudian lakukan penginstallan relay pada SURABAYA dengan command berikut.
+```
+apt-get install isc-dhcp-relay
+```
+- Setelah melakukan perintah tersebut akan muncul windows seperti dibawah ini. Dan masukkan ip TUBAN yaitu ``10.151.77.180``
 
-
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782135078381551626/2.4_dhcp_relay_surabaya_input_ip_tuban.JPG" width="400" height="400">
 
 
 
