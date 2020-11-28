@@ -62,31 +62,31 @@ nano /etc/network/interfaces
 
 - Lakukan pada MALANG tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782117656764743680/1.3_setting_interfaces_malang.JPG"  width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782117656764743680/1.3_setting_interfaces_malang.JPG"  width="500" height="400">
 
 - Lakukan pada TUBAN tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118142137991219/1.4_setting_interfaces_tuban.JPG"  width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118142137991219/1.4_setting_interfaces_tuban.JPG"  width="500" height="400">
 
 - Lakukan pada MOJOKERTO tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118825935241256/1.5_setting_interfaces_mojokerto.JPG"  width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118825935241256/1.5_setting_interfaces_mojokerto.JPG"  width="500" height="400">
 
 - Lakukan pada BANYUWANGI tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="500" height="400">
 
 - Lakukan pada SIDOARJO tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="500" height="400">
 
 - Lakukan pada MADIUN tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782119110028558356/1.8_setting_interfaces_madiun.JPG"  width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782119110028558356/1.8_setting_interfaces_madiun.JPG"  width="500" height="400">
 
 - Lakukan pada GRESIK tambahkan seperti pada gambar dibawah ini.
 
-<img src="https://media.discordapp.net/attachments/777146787336290354/782119211111677952/1.9_setting_interfaces_gresik.JPG"  width="400" height="400">
+<img src="https://media.discordapp.net/attachments/777146787336290354/782119211111677952/1.9_setting_interfaces_gresik.JPG"  width="500" height="400">
 
 - Dan gambar berikut merupakan hasil UML setelah kita lakukan konfigurasi.
 
@@ -104,7 +104,7 @@ apt-get update
 apt-get install isc-dhcp-server
 ```
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782121992870559754/2.1_sukese_install_dhcp_tuban.JPG" width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782121992870559754/2.1_sukese_install_dhcp_tuban.JPG" width="500" height="400">
 
 - Setelah itu lakukan konfigurasi interface DHCP pada TUBAN. Setelah itu buka konfigurasi interface dengan perintah.
 
@@ -118,7 +118,7 @@ nano /etc/default/isc-dhcp-server
 INTERFACE=eth0
 ```
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782124441828065280/2.2_setup_dhcp_server_tuban.JPG" width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782124441828065280/2.2_setup_dhcp_server_tuban.JPG" width="500" height="400">
 
 - Setelah itu lakukan konfigurasi DHCP pada TUBAN dengan command.
 
@@ -126,17 +126,32 @@ INTERFACE=eth0
 nano /etc/dhcp/dhcpd.conf
 ```
 
-- Dan tambahkan script seperti pada gambar dibawah ini.
+- Dan tambahkan script seperti pada gambar dibawah ini. Dan setelah itu lakukan restart servvice dengan perintah ``service isc-dhcp-server restart``
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782127245837598750/2.3_setup_dhcpd_conf_tuban.JPG" width="400" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782127245837598750/2.3_setup_dhcpd_conf_tuban.JPG" width="500" height="400">
 
 - Kemudian lakukan penginstallan relay pada SURABAYA dengan command berikut.
+
 ```
 apt-get install isc-dhcp-relay
 ```
-- Setelah melakukan perintah tersebut akan muncul windows seperti dibawah ini. Dan masukkan ip TUBAN yaitu ``10.151.77.180``
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782135078381551626/2.4_dhcp_relay_surabaya_input_ip_tuban.JPG" width="400" height="400">
+- Setelah melakukan perintah tersebut akan muncul windows seperti dibawah ini. Dan masukkan ip TUBAN yaitu ``10.151.77.180``.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782135078381551626/2.4_dhcp_relay_surabaya_input_ip_tuban.JPG" width="500" height="400">
+
+- Setelah memasukkan ip TUBAN, akan diminta untuk memasukkan konfigurasi interface seperti gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782135824452026419/2.5_setup_eth_relay_surabaya.JPG" width="500" height="400">
+
+- Setelah itu proses instalasi isc-dhcp-relay pada surabaya telah berhasil seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782136457062121493/2.6_berhasil_membuat_relay_di_surabaya.JPG" width="500" height="400">
+
+### Soal 3
+### Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.
+
+-
 
 
 
