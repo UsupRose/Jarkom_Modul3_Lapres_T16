@@ -58,6 +58,6 @@ nano /etc/network/interfaces
 ```
   Lalu tambahkan seperti pada gambar dibawah ini.
   
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782112359011319808/1.2_setting_interfaces_surabaya.JPG" alt="ini gambar kontol" width="600" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782112359011319808/1.2_setting_interfaces_surabaya.JPG"  width="500" height="400">
   
 
