@@ -90,7 +90,7 @@ nano /etc/network/interfaces
 
 - Dan gambar berikut merupakan hasil UML setelah kita lakukan konfigurasi.
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782120709005639700/1.10_hasil_uml.JPG"  width="600" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782120709005639700/1.10_hasil_uml.JPG">
 
 
 
