@@ -185,6 +185,16 @@ nano /etc/network/interfaces
 <br />
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782254689123041400/3.3_setting_interfaces_sidoarjo.JPG" width="500" height="400">
 
+- Setelah itu lakukan testing dengan perintah. 
+```
+cat /etc/resolv.conf
+```
+- Dan Berikut merupakan hasil dari kedua client yang telah dikonfigurasikan.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782256192033390602/3.4_hasil_subnet_1_gresik.JPG" width="500" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782256211285377024/3.5_hasil_subnet1_sidoarjo.JPG" width="500" height="400">
+
 
 
 
