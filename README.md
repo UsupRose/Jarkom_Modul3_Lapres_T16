@@ -52,7 +52,7 @@ xterm -T MADIUN -e linux ubd0=MADIUN,jarkom umid=MADIUN eth0=daemon,,,switch3 me
 xterm -T BANYUWANGI -e linux ubd0=BANYUWANGI umid-BANYUWANGI eth0=daemon,,,switch3 mem=64M &
 ```
 
-- Kemudian kita lakukan konfigurasi interface pada setiap client supaya bisa mendapatkan layanan dari DHCP. Setelah itu buka ``/etc/network/interfaces`` pada setiap client.
+- Kemudian kita lakukan konfigurasi interface pada setiap UML supaya bisa mendapatkan layanan dari DHCP. Setelah itu buka ``/etc/network/interfaces`` pada setiap client.
 ```
 nano /etc/network/interfaces
 ```
@@ -91,6 +91,45 @@ nano /etc/network/interfaces
 - Dan gambar berikut merupakan hasil UML setelah kita lakukan konfigurasi.
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782120709005639700/1.10_hasil_uml.JPG" width="800" height="400">
+
+### Soal 3
+### SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client.
+
+- Setelah itu lakukan instalasi ISC-DHCP pada TUBAN. Lakukan package list pada TUBAN dengan command.
+```
+apt-get update
+```
+- Install ISC-DHCP dengan command.
+```
+apt-get install isc-dhcp-server
+```
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782121992870559754/2.1_sukese_install_dhcp_tuban.JPG" width="400" height="400">
+
+- Setelah itu lakukan konfigurasi interface DHCP pada TUBAN. Setelah itu buka konfigurasi interface dengan perintah.
+
+```
+nano /etc/default/isc-dhcp-server
+```
+
+- Kemudian tentukan interfaces ``eth0`` untuk diberikan layanan DHCP.
+
+```
+INTERFACE=eth0
+```
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782124441828065280/2.2_setup_dhcp_server_tuban.JPG" width="400" height="400">
+
+- Setelah itu lakukan konfigurasi DHCP pada TUBAN dengan command.
+
+```
+nano /etc/dhcp/dhcpd.conf
+```
+
+- Dan tambahkan script seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782127245837598750/2.3_setup_dhcpd_conf_tuban.JPG" width="400" height="400">
+
 
 
 
