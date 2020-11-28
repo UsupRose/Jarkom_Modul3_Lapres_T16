@@ -28,7 +28,6 @@
 ### Membuat topologi jaringan.
 
 - Melakukan setting awal pembuatan UML. Untuk topologi yang ada pada gambar soal maka sintaksnya sebagai berikut.
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782105765585879080/1.1_setting_awal_pembuatan_UML.JPG" alt="ini gambar kontol" width="200" height="600">
 
 ![picture](https://cdn.discordapp.com/attachments/777146787336290354/782105765585879080/1.1_setting_awal_pembuatan_UML.JPG)
 
@@ -57,5 +56,8 @@ xterm -T BANYUWANGI -e linux ubd0=BANYUWANGI umid-BANYUWANGI eth0=daemon,,,switc
 ```
 nano /etc/network/interfaces
 ```
-
+  Lalu tambahkan seperti pada gambar dibawah ini.
+  
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782105765585879080/1.1_setting_awal_pembuatan_UML.JPG" alt="ini gambar kontol" width="500" height="600">
+  
 
