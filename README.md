@@ -68,25 +68,29 @@ nano /etc/network/interfaces
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782118142137991219/1.4_setting_interfaces_tuban.JPG"  width="400" height="400">
 
--Lakukan pada MOJOKERTO tambahkan seperti pada gambar dibawah ini.
+- Lakukan pada MOJOKERTO tambahkan seperti pada gambar dibawah ini.
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782118825935241256/1.5_setting_interfaces_mojokerto.JPG"  width="400" height="400">
 
--Lakukan pada BANYUWANGI tambahkan seperti pada gambar dibawah ini.
+- Lakukan pada BANYUWANGI tambahkan seperti pada gambar dibawah ini.
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="400" height="400">
 
--Lakukan pada SIDOARJO tambahkan seperti pada gambar dibawah ini.
+- Lakukan pada SIDOARJO tambahkan seperti pada gambar dibawah ini.
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="400" height="400">
 
--Lakukan pada MADIUN tambahkan seperti pada gambar dibawah ini.
+- Lakukan pada MADIUN tambahkan seperti pada gambar dibawah ini.
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782119110028558356/1.8_setting_interfaces_madiun.JPG"  width="400" height="400">
 
--Lakukan pada GRESIK tambahkan seperti pada gambar dibawah ini.
+- Lakukan pada GRESIK tambahkan seperti pada gambar dibawah ini.
 
 <img src="https://media.discordapp.net/attachments/777146787336290354/782119211111677952/1.9_setting_interfaces_gresik.JPG"  width="400" height="400">
+
+- Dan gambar berikut merupakan hasil UML setelah kita lakukan konfigurasi.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782120709005639700/1.10_hasil_uml.JPG"  width="600" height="400">
 
 
 
