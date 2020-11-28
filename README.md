@@ -63,5 +63,49 @@ nano /etc/network/interfaces
 - Lakukan pada MALANG tambahkan seperti pada gambar dibawah ini.
 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782117656764743680/1.3_setting_interfaces_malang.JPG"  width="400" height="400">
+
+- Lakukan pada TUBAN tambahkan seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118142137991219/1.4_setting_interfaces_tuban.JPG"  width="400" height="400">
+
+-Lakukan pada MOJOKERTO tambahkan seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118825935241256/1.5_setting_interfaces_mojokerto.JPG"  width="400" height="400">
+
+-Lakukan pada BANYUWANGI tambahkan seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="400" height="400">
+
+-Lakukan pada SIDOARJO tambahkan seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782118939831959562/1.6_setting_interfaces_banyuwangi.JPG"  width="400" height="400">
+
+-Lakukan pada MADIUN tambahkan seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782119110028558356/1.8_setting_interfaces_madiun.JPG"  width="400" height="400">
+
+-Lakukan pada GRESIK tambahkan seperti pada gambar dibawah ini.
+
+<img src="https://media.discordapp.net/attachments/777146787336290354/782119211111677952/1.9_setting_interfaces_gresik.JPG"  width="400" height="400">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
