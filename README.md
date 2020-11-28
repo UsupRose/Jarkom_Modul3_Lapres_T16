@@ -151,7 +151,47 @@ apt-get install isc-dhcp-relay
 ### Soal 3
 ### Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.
 
--
+- Lakukan konfigurasi subnet TUBAN untuk client GRESIK dan SIDOARJO dengan cara melakukan perintah.
+
+```
+nano /etc/dhcp/dhcpd.conf
+```
+- Tambahkan script berikut dan sesuai dengan gambar dibawah.
+```
+subnet 192.168.0.0 netmask 255.255.255.0 {
+    range 192.168.0.10 192.168.0.100;
+    range 192.168.0.110 192.168.0.200;
+    option routers 192.168.0.1;
+    option broadcast-address 192.168.0.255;
+    option domain-name-servers 10.151.77.176 202.46.129.2;
+    default-lease-time 300;
+}
+```
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782252647687127080/3.1_setup_subnet_tuban_untuk_client_gresik_sidoarjo.JPG" width="500" height="400">
+
+- Dan lakukan service restart dengan perintah.
+```
+service isc-dhcp-server restart
+```
+
+- Kemudian lakukan konfigurasi pada interface client GRESIK dan SIDOARJO dengan perintah.
+```
+nano /etc/network/interfaces
+```
+
+- Dan isi konfigurasi sesuai pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782253907413303306/3.2_setting_interfaces_gresik.JPG" width="500" height="400">
+<br />
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782254689123041400/3.3_setting_interfaces_sidoarjo.JPG" width="500" height="400">
+
+
+
+
+
+
+
+
 
 
 
