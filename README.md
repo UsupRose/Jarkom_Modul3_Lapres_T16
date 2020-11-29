@@ -407,7 +407,63 @@ nano /etc/suqid/squid.conf
 ### Bu Meguri meminta Anri untuk mengubah error page default squid menjadi seperti berikut
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782513406237343744/unknown.png" width="900" height="400">
 
+- Download error image diatas dengan perintah.
+```
+wget 10.151.36.202/error403.tar.gz
+```
 
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782517701795905567/11.1_berhasil_mendownload_template_error.JPG" width="500" height="400">
+
+- Kemudian buat file ``ERR_ACCESS_DENIED`` dan isi seperti gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782518369005994014/11.2_isi_file_error.JPG" width="500" height="400">
+
+- Kemudian salin file yang telah dibuat ke dalam folder squid dengan commmand.
+```
+cp -r ERR_ACCESS_DENIED /etc/squid
+```
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782519064186716203/11.3_file_error_sudah_dipindahkan_ke_folder_squid.JPG" width="500" height="400">
+
+- Kemudian backup file error pada squid  tersebut
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782520287282462740/11.4_membackup_file_error_default_pada_squid.JPG" width="500" height="400">
+
+- Kemudian lakukan konfigurasi pada ``squid.conf`` untuk error message dengan command berikut.
+```
+nano /etc/squid/squid.conf
+```
+
+- Kemudian isikan konfigurasi seperti gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782522484108951552/11.4_setup_squid_config_untuk_error_message.JPG" width="500" height="400">
+
+- Hapus file ERR_ACCESS_DENIED(default) dengan command ``rm``.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782522916264083456/11.5_menghapus_file_ERR_ACCESS_DENIED_default.JPG" width="500" height="400">
+
+- Kemudian salin file yang telah didownload ke directory default error squid dengan perintah.
+```
+cp ERR_ACCESS_DENIED /usr/share/squid/errors/en
+```
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782523637160083486/11.6_copy_file_yang_didownload_ke_direktori_default_error_squid.JPG" width="500" height="400">
+
+- Kemudian pastikan isi file error default yan baru benar.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782523968061702164/11.7_memastikan_isi_file_error_default_yang_baru.JPG" width="500" height="400">
+
+- Kemudian restart squid dengan command.
+```
+service squid restart
+```
+
+- Untuk mengetes error message maka lakukan perubahan pada acl waktu seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782524491943116800/11.9_untuk_mengetes_error_message_maka_acl_waktu_dirubah_karena_waktu_kami_mengerjakan_adalah_waktu_.JPG" width="500" height="400">
+
+-Dan ini merupakan hasil dari error message yang telah berhasil konfigurasinya.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782524973218267166/11.10_berhasil_mengganti_default_error_page_pada_squid.JPG" width="900" height="400">
 
 
 
@@ -415,6 +471,9 @@ nano /etc/suqid/squid.conf
 
 
   
+
+
+
 
 
 
