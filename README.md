@@ -195,19 +195,87 @@ cat /etc/resolv.conf
 <br>
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782256211285377024/3.5_hasil_subnet1_sidoarjo.JPG" width="500" height="400">
 
+### Soal 4
+### Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.
 
+- Lakukan konfigurasi subnet TUBAN untuk client BANYUWANGI dan MADIUN dengan cara melakukan perintah.
 
+```
+nano /etc/dhcp/dhcpd.conf
+```
+- Tambahkan script berikut dan sesuai dengan gambar dibawah.
+```
+subnet 192.168.0.0 netmask 255.255.255.0 {
+    range 192.168.1.50 192.168.1.70;
+    option routers 192.168.1.1;
+    option broadcast-address 192.168.1.255;
+    option domain-name-servers 10.151.77.176 202.46.129.2;
+    default-lease-time 600;
+    max-lease-time 7200;
+}
+```
+<img src="https://media.discordapp.net/attachments/777146787336290354/782257709663780884/4.1_setup_subnet_tuban_untuk_client_banyuwangi_madiun.JPG" width="500" height="400">
 
+- Dan lakukan service restart dengan perintah.
+```
+service isc-dhcp-server restart
+```
 
+- Kemudian lakukan konfigurasi pada interface client BANYUWANGI dan MADIUN dengan perintah.
+```
+nano /etc/network/interfaces
+```
 
+- Dan isi konfigurasi sesuai pada gambar dibawah ini.
 
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782258057257287690/4.2_setting_interfaces_banyuwangi.JPG" width="500" height="400">
+<br />
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782258135008149514/4.3_setting_interfaces_madiun.JPG" width="500" height="400">
 
+- Setelah itu lakukan testing dengan perintah. 
+```
+cat /etc/resolv.conf
+```
+- Dan Berikut merupakan hasil dari kedua client yang telah dikonfigurasikan.
 
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782258234484326410/4.4_hasil_subnet_3_madiun.JPG" width="500" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782258310438584340/4.5_hasil_subnet_3_banyuwangi.JPG" width="500" height="400">
 
+### Soal 5
+### Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP
 
+- Lakukan konfigurasi DHCP Server pada TUBAN dengan perintah
+```
+nano /etc/dhcp/dhcpd.conf
+````
 
+- Dan lakukan konfigurasi sperti dibawah ini.
 
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782460103239925810/6.1_setup_waktu_peminjaman_IP_subnet_1_dan_3.JPG" width="500" height="400">
 
+- Dan berikut merupak hasil dns dari SIDOARJO, GRESIK, dan BANYUWANGI.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782463911583940648/5.2_hasil_dns_sidoarjo.JPG" width="500" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782464077984432168/5.3_hasil_dns_gresik.JPG" width="500" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782464180304478258/5.4_hasil_dns_banyuwangi.JPG" width="500" height="400">
+
+### Soal 6
+### Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.
+
+- Lakukan konfigurasi pada ``/etc/dhcp/dhcpd.conf`` dengan perintah.
+```
+nano /etc/dhcp.dhcpd.conf
+```
+
+- Dan lakukan konfigurasi seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782460103239925810/6.1_setup_waktu_peminjaman_IP_subnet_1_dan_3.JPG" width="500" height="400">
+
+### Soal 7
+### 
 
 
 
