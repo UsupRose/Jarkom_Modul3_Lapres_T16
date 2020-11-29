@@ -446,7 +446,7 @@ nano /etc/squid/squid.conf
 cp ERR_ACCESS_DENIED /usr/share/squid/errors/en
 ```
 
-<img src="https://cdn.discordapp.com/attachments/777146787336290354/782523637160083486/11.6_copy_file_yang_didownload_ke_direktori_default_error_squid.JPG" width="500" height="400">
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782523637160083486/11.6_copy_file_yang_didownload_ke_direktori_default_error_squid.JPG">
 
 - Kemudian pastikan isi file error default yan baru benar.
 
