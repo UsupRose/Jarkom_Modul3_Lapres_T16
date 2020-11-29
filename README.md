@@ -276,8 +276,8 @@ nano /etc/dhcp.dhcpd.conf
 
 ### Soal 7
 ### User autentikasi milik Anri memiliki format:
-### ● User : userta_yyy
-### ● Password : inipassw0rdta_yyy
+### - User : userta_yyy
+### - Password : inipassw0rdta_yyy
 
 - Lakukan penginstallan ``apache2-utils`` pada UML MOJOKERTO. Sebelumnya kalian sudah harus melakukan ``apt-get update``. Ketikkan:
 ```
@@ -325,7 +325,7 @@ service squid restart
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782483931483340810/7.5_berhasil_membuat_username_dan_password_serta_mengakses_website.JPG" width="800" height="400">
 
 ### Soal 8
-### setiap hari Selasa-Rabu pukul 13.00-18.00. Bu Meguri membatasi penggunaan internet Anri hanya pada jadwal yang telah ditentukan itu saja. Maka diluar jam tersebut, Anri tidak    dapat mengakses jaringan internet dengan proxy tersebut.
+### Setiap hari Selasa-Rabu pukul 13.00-18.00. Bu Meguri membatasi penggunaan internet Anri hanya pada jadwal yang telah ditentukan itu saja. Maka diluar jam tersebut, Anri tidak    dapat mengakses jaringan internet dengan proxy tersebut.
 
 - Buatlah file baru pada UML MOJOKERTO bernama acl.conf di folder squid
 ```
@@ -349,10 +349,61 @@ nano /etc/squid/squid.conf
 service squid restart
 ```
 
+- Cobalah untuk mengakses web http://its.ac.id (usahakan menggunakan mode incognito/private). Akan muncul halaman error jika mengakses diluar waktu yang telah ditentukan.
 
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782493844474167346/8.3_setelah_dicoba_meminta_login.JPG" width="900" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782494043057291264/8.4_berhasil_akses_karena_sesuai_waktu.JPG" width="900" height="400">
 
+### Soal 9
+### Setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00). Agar Anri bisa fokus mengerjakan TA.
 
+- Lakukan konfigurasi acl pada MOJOKERTO dengan command. 
+```
+nano /etc/squid/acl.conf
+```
 
+- Isikan konfigurasi sesuai dengan gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782495683633872906/9.1_setup_acl_pada_mojokerto.JPG" width="500" height="400">
+
+- Kemudian lakukan konfigurasi squid.conf dengan command.
+```
+nano /etc/squid/squid.conf
+```
+- Lalu isikan konfigurasi seperti dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782505554617958400/9.2_setup_squid_config_pada_mojokerto.JPG" width="500" height="400">
+
+- Kemudian restart squid dengan perintah.
+```
+service squid restart
+```
+
+- Cobalah untuk mengakses web http://its.ac.id (usahakan menggunakan mode incognito/private). Akan muncul halaman error jika mengakses diluar waktu yang telah ditentukan.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782493844474167346/8.3_setelah_dicoba_meminta_login.JPG" width="900" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782494043057291264/8.4_berhasil_akses_karena_sesuai_waktu.JPG" width="900" height="400">
+
+### Soal 10
+### Setiap dia mengakses google.com, maka akan di redirect menuju monta.if.its.ac.id agar Anri selalu ingat untuk mengerjakan TA.
+
+- Lakukan konfigurasi redirect pada squid.conf dengan command.
+```
+nano /etc/suqid/squid.conf
+```
+- Dan lakukan konfigurasi seperti gambar dibawah ini
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782511183000633344/10.1_setup_redirect_pada_config_squid.JPG" width="500" height="400">
+
+- Berikut merupakan hasil membuat redirect ke monta setiap mengakses google.com
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782483115267981342/7.4_proxy_meminta_login_username_dan_password.JPG" width="900" height="400">
+<br>
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782511868124069918/10.3_berhasil_membuat_redirect_ke_monta_setiap_mengakses_google.JPG" width="900" height="400">
+
+### Soal 11
 
 
 
@@ -362,4 +413,6 @@ service squid restart
 
 
   
+
+
 
