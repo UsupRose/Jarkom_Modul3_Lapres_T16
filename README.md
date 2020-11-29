@@ -275,14 +275,56 @@ nano /etc/dhcp.dhcpd.conf
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782460103239925810/6.1_setup_waktu_peminjaman_IP_subnet_1_dan_3.JPG" width="500" height="400">
 
 ### Soal 7
-### 
+### User autentikasi milik Anri memiliki format:
+### ● User : userta_yyy
+### ● Password : inipassw0rdta_yyy
 
+- Lakukan penginstallan ``apache2-utils`` pada UML MOJOKERTO. Sebelumnya kalian sudah harus melakukan ``apt-get update``. Ketikkan:
+```
+apt-get install apache2-utils
+```
 
+- Setelah proses instalasi selesai. Lakukan pembuatan user login dengan perintah.
+```
+htpasswd -c /etc/squid/passwd jarkom203
+```
+ Ketikkan seperti pada gambar dibawah ini.
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782479843660136458/7.1_setup_username_dan_password_pada_mojokerto.JPG" width="500" height="400">
 
+- Setelah itu edit konfigurasi squid menjadi.
+```
+http_port 8080
+visible_hostname mojokerto
 
+auth_param basic program /usr/lib/squid/basic_ncsa_auth /etc/squid/passwd
+auth_param basic children 5
+auth_param basic realm Proxy
+auth_param basic credentialsttl 2 hours
+auth_param basic casesensitive on
+acl USERS proxy_auth REQUIRED
+http_access allow USERS
+```
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782481272613371945/7.2_setup_config_pada_mojokerto.JPG" width="500" height="400">
 
+- Lakukan restart squid dengan perintah.
+```
+service squid restart
+```
 
+- Kemudian ubah pengaturan proxy browser. Gunakan IP MOJOKERTO sebagai host, dan isikan port 8080.
 
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782482120823930940/7.3_setup_proxy_mojokerto.JPG" width="500" height="400">
+
+- Kemudian cobalah untuk mengakses web (usahakan menggunakan mode incognito/private), akan muncul pop-up untuk login menggunakan username dan password yang telah kita buat.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782483115267981342/7.4_proxy_meminta_login_username_dan_password.JPG" width="800" height="400">
+
+- Dan gambar dibawah ini merupakan contoh berhasil dari membuat username dan password serta mengakses website.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782483931483340810/7.5_berhasil_membuat_username_dan_password_serta_mengakses_website.JPG" width="800" height="400">
+
+### Soal 8
+###
 
 
 
