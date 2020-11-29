@@ -289,6 +289,7 @@ apt-get install apache2-utils
 htpasswd -c /etc/squid/passwd jarkom203
 ```
  Ketikkan seperti pada gambar dibawah ini.
+ 
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782479843660136458/7.1_setup_username_dan_password_pada_mojokerto.JPG" width="500" height="400">
 
 - Setelah itu edit konfigurasi squid menjadi.
@@ -324,7 +325,37 @@ service squid restart
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782483931483340810/7.5_berhasil_membuat_username_dan_password_serta_mengakses_website.JPG" width="800" height="400">
 
 ### Soal 8
-###
+### setiap hari Selasa-Rabu pukul 13.00-18.00. Bu Meguri membatasi penggunaan internet Anri hanya pada jadwal yang telah ditentukan itu saja. Maka diluar jam tersebut, Anri tidak    dapat mengakses jaringan internet dengan proxy tersebut.
+
+- Buatlah file baru pada UML MOJOKERTO bernama acl.conf di folder squid
+```
+nano /etc/squid/acl.conf
+```
+
+- Dan isikan seperti gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782485748992704542/8.1_setup_acl_pada_mojokerto.JPG" width="500" height="400">
+
+- Setelah itu simpan filenya. Dan buka file squid.conf dengan perintah
+```
+nano /etc/squid/squid.conf
+```
+- Setelah itu lakukan konfigurasi seperti pada gambar dibawah ini.
+
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782486913449328650/8.2_setup_squid_config_pada_mojokerto.JPG" width="500" height="400">
+
+- Kemudian restart squid dengan perintah.
+```
+service squid restart
+```
+
+
+
+
+
+
+
+
 
 
 
