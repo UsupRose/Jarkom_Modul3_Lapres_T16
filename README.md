@@ -404,6 +404,8 @@ nano /etc/suqid/squid.conf
 <img src="https://cdn.discordapp.com/attachments/777146787336290354/782511868124069918/10.3_berhasil_membuat_redirect_ke_monta_setiap_mengakses_google.JPG" width="900" height="400">
 
 ### Soal 11
+### Bu Meguri meminta Anri untuk mengubah error page default squid menjadi seperti berikut
+<img src="https://cdn.discordapp.com/attachments/777146787336290354/782513406237343744/unknown.png" width="900" height="400">
 
 
 
